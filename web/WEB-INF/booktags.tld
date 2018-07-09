@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>booktags</short-name>
+  <uri>/WEB-INF/booktags</uri>
+  
+  <tag>
+      <name>displayBooks</name>
+      <tag-class>books.tags.DisplayBooksTag</tag-class>
+      <body-content>JSP</body-content>
+  </tag>
+  
+  <tag>
+      <name>displayUsers</name>
+      <tag-class>books.tags.DisplayUsersTag</tag-class>
+      <body-content>JSP</body-content>
+  </tag>
+  
+  <tag>
+      <name>displayCart</name>
+      <tag-class>books.tags.DisplayCartTag</tag-class>
+      <body-content>JSP</body-content>
+  </tag>
+  
+  <tag>
+      <name>displayOrders</name>
+      <tag-class>books.tags.DisplayOrdersTag</tag-class>
+      <body-content>JSP</body-content>
+  </tag>
+  
+</taglib>

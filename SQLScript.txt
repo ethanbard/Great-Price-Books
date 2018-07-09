@@ -1,0 +1,12 @@
+This is the SQL Script used to create my database.
+
+
+CREATE TABLE Book (BookID numeric(2, 0) PRIMARY KEY, Title varchar(100), Author varchar(50), Category varchar(50), Price decimal(8, 2));
+
+CREATE TABLE Users (UserID numeric(2, 0) PRIMARY KEY, FirstName varchar(25), LastName varchar(25), 
+		    UserName varchar(25), Password varchar(25), EmailAddress varchar(30),
+                    Administrator char(1));
+
+CREATE TABLE Orders (OrderID numeric(2, 0) PRIMARY KEY, OrderDate datetime, TotalCost decimal (8, 2), CustomerID numeric (2, 0));
+
+CREATE TABLE OrderBook (BookID numeric(2, 0), OrderID numeric (2, 0), PRIMARY KEY (BookID, OrderID));
